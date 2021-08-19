@@ -510,22 +510,31 @@
 
             if(event.target.classList.contains("parede")){
                 event.target.classList.remove("parede");
+                console.log(event.target.className)
             }
 
             else if(event.target.classList == ""){
                 event.target.classList.add("orc");
+                console.log(event.target.className)
+
             }
 
             else if(event.target.classList.contains("orc")){
                 event.target.classList.remove("orc")
                 event.target.classList.add("tesouro");
+                console.log(event.target.className)
+
             }
 
             else{
                 event.target.classList.remove("tesouro")
                 event.target.classList.add("parede");
+                console.log(event.target.className)
+
             }
         }
+
+       
 
     </script>
 </body>
