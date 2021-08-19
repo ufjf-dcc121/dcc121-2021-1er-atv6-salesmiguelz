@@ -500,8 +500,11 @@
         const celulas = querySelectorAll('td');
 
         for(let i = 0; i < (celulas.length-1); i++){
-            celulas[i].classList.add("parede");
+            if(celulas[i].classList == ""){
+                 celulas[i].classList.add("parede");
+            }
         }
+
     </script>
 </body>
 </html>
