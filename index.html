@@ -501,7 +501,7 @@
 
         for(let i = 0; i < (celulas.length); i++){
             celulas[i].addEventListener("click", retornaClasse, true);
-            if(celulas[i].classList == ""){
+            if(celulas[i].classList.length === 0){
                  celulas[i].classList.add("parede");
             }
         }
@@ -513,7 +513,7 @@
                 console.log(event.target.className)
             }
 
-            else if(event.target.classList == ""){
+            else if(event.target.classList.length === 0){
                 event.target.classList.add("orc");
                 console.log(event.target.className)
 
